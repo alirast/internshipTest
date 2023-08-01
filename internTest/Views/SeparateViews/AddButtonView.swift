@@ -24,7 +24,7 @@ struct AddButtonView: View {
                 EmptyView()
             }
         }
-        .padding(.horizontal)
+        .padding()
     }
 }
 
