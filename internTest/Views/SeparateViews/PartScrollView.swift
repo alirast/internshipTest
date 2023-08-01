@@ -28,12 +28,12 @@ struct PartScrollView: View {
                                     Image(systemName: "plus.circle")
                                 }
                                 .padding()
-                                .foregroundColor(.green)
+                                .foregroundColor(Color(uiColor: UIColor(red: CGFloat(65.0/255), green: CGFloat(144.0/255), blue: CGFloat(149.0/255), alpha: 1.0)))
                                 .background(Color.white)
                                 .cornerRadius(15)
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 15)
-                                        .strokeBorder(Color.green, lineWidth: 3)
+                                        .strokeBorder(Color(uiColor: UIColor(red: CGFloat(65.0/255), green: CGFloat(144.0/255), blue: CGFloat(149.0/255), alpha: 1.0)), lineWidth: 3)
                                 }
                             } else {
                                 Text(button)
