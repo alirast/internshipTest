@@ -12,6 +12,7 @@ struct CaloriesView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Энергетическая ценность")
+                .font(.title)
                 .padding()
             TextField("Энергетическая ценность", text: $caloriesTitle)
                 .padding()
