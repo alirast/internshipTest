@@ -50,6 +50,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F6FA34E2A795BA40021C8F8 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				4FC73C512A78FC8E0063B624 /* firstView.swift */,
+				4FABD03A2A77E7AC004BE105 /* secondView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		4F6FA34F2A795BAE0021C8F8 /* SeparateViews */ = {
+			isa = PBXGroup;
+			children = (
+				4FC73C532A7925780063B624 /* PartScrollView.swift */,
+				4FC73C562A792AF30063B624 /* DishTitleView.swift */,
+				4FC73C5A2A7936670063B624 /* PriceView.swift */,
+				4FC73C5C2A7937510063B624 /* CaloriesView.swift */,
+				4F6FA3482A79524F0021C8F8 /* AddButtonView.swift */,
+				4F6FA34A2A7953CC0021C8F8 /* AddIngredientButton.swift */,
+				4F6FA34C2A795AF20021C8F8 /* UploadView.swift */,
+			);
+			path = SeparateViews;
+			sourceTree = "<group>";
+		};
 		4FABD01E2A77E27C004BE105 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +95,6 @@
 				4FC73C552A7925B90063B624 /* Views */,
 				4FABD02A2A77E27C004BE105 /* internTestApp.swift */,
 				4FABD02C2A77E27C004BE105 /* ContentView.swift */,
-				4FABD03A2A77E7AC004BE105 /* secondView.swift */,
-				4FC73C512A78FC8E0063B624 /* firstView.swift */,
 				4FABD02E2A77E27D004BE105 /* Assets.xcassets */,
 				4FABD0302A77E27D004BE105 /* Preview Content */,
 			);
@@ -91,13 +112,8 @@
 		4FC73C552A7925B90063B624 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4FC73C532A7925780063B624 /* PartScrollView.swift */,
-				4FC73C562A792AF30063B624 /* DishTitleView.swift */,
-				4FC73C5A2A7936670063B624 /* PriceView.swift */,
-				4FC73C5C2A7937510063B624 /* CaloriesView.swift */,
-				4F6FA3482A79524F0021C8F8 /* AddButtonView.swift */,
-				4F6FA34A2A7953CC0021C8F8 /* AddIngredientButton.swift */,
-				4F6FA34C2A795AF20021C8F8 /* UploadView.swift */,
+				4F6FA34F2A795BAE0021C8F8 /* SeparateViews */,
+				4F6FA34E2A795BA40021C8F8 /* MainViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
