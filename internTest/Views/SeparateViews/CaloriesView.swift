@@ -19,7 +19,7 @@ struct CaloriesView: View {
                 .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color("specialGreen"), style: StrokeStyle(lineWidth: 1.0)))
          
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

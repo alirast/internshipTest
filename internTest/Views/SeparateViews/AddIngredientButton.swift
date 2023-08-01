@@ -26,7 +26,7 @@ struct AddIngredientButton: View {
                     .cornerRadius(10)
             }
         }
-        .padding()
+        .padding(.horizontal)
     }
     
     private func showAlert() {

@@ -11,11 +11,11 @@ struct PartScrollView: View {
     @State var buttons: [String] = ["New part"]
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Раздел")
                 .font(.title)
                 .fontWeight(.bold)
-            
+                .padding(.horizontal)
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(buttons, id: \.self) { button in
@@ -42,12 +42,12 @@ struct PartScrollView: View {
                             } else {
                                 Text(button)
                                     .padding()
-                                    .foregroundColor(.green)
+                                    .foregroundColor(Color("specialGreen"))
                                     .background(.white)
                                     .cornerRadius(15)
                                     .overlay {
                                         RoundedRectangle(cornerRadius: 15)
-                                            .strokeBorder(Color.green, lineWidth: 3)
+                                            .strokeBorder(Color("specialGreen"), lineWidth: 3)
                                     }
                             }
                         }
@@ -66,7 +66,7 @@ struct PartScrollView: View {
                             .fill(Color.gray)
                             .frame(width: 125, height: 1), alignment: .bottom)
                 }
-                .padding()
+           
                 Spacer()
                 Button {
                     
@@ -77,8 +77,9 @@ struct PartScrollView: View {
                             .fill(Color.gray)
                             .frame(width: 155, height: 1), alignment: .bottom)
                 }
-                .padding()
+            
             }
+            .padding()
             
 
         }

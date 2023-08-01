@@ -18,7 +18,7 @@ struct DishTitleView: View {
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color("specialGreen"), style: StrokeStyle(lineWidth: 1.0)))
             }
-            .padding()
+            .padding(.horizontal)
         }
 
 }
