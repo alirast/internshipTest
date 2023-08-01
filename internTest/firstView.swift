@@ -54,13 +54,14 @@ struct firstView: View {
                 
             } label: {
                 Text("Добавить блюдо")
-    
+                    .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.green)
                     .foregroundColor(.white)
                     .font(.title)
                     .cornerRadius(10)
             }
+            .padding()
             
             
         }

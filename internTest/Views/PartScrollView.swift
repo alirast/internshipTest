@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PartScrollView: View {
     @State var buttons: [String] = ["New part"]
+    
     var body: some View {
         VStack {
             ScrollView(.horizontal) {
@@ -61,7 +62,8 @@ struct PartScrollView: View {
                             .fill(Color.gray)
                             .frame(width: 125, height: 1), alignment: .bottom)
                 }
-                
+                .padding()
+                Spacer()
                 Button {
                     
                 } label: {
@@ -71,7 +73,9 @@ struct PartScrollView: View {
                             .fill(Color.gray)
                             .frame(width: 155, height: 1), alignment: .bottom)
                 }
+                .padding()
             }
+            
 
         }
         
