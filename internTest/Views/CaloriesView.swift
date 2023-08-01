@@ -13,12 +13,13 @@ struct CaloriesView: View {
         VStack(alignment: .leading) {
             Text("Энергетическая ценность")
                 .font(.title)
-                .padding()
+            
             TextField("Энергетическая ценность", text: $caloriesTitle)
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color.green, style: StrokeStyle(lineWidth: 1.0)))
-                .padding()
+         
         }
+        .padding()
     }
 }
 
