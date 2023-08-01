@@ -50,18 +50,7 @@ struct firstView: View {
 //MARK: - calories
             CaloriesView()
 //MARK: - add button
-            Button {
-                
-            } label: {
-                Text("Добавить блюдо")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .cornerRadius(10)
-            }
-            .padding()
+            AddButtonView()
             
             
         }
