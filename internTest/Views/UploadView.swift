@@ -12,7 +12,7 @@ struct UploadView: View {
         VStack(alignment: .leading) {
             HStack {
                 Circle()
-                    .fill(.gray)
+                    .fill(Color(uiColor: .lightGray))
                     .frame(width: 50, height: 50)
                     .overlay {
                         Image(systemName: "mountain.2.fill")
