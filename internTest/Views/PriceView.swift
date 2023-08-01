@@ -12,13 +12,12 @@ struct PriceView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Цена")
-                .padding()
+                .font(.title)
             TextField("Цена", text: $priceTitle)
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color.green, style: StrokeStyle(lineWidth: 1.0)))
-                .padding()
-            
         }
+        .padding()
     }
 }
 
