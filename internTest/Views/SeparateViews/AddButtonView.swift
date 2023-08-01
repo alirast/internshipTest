@@ -15,7 +15,7 @@ struct AddButtonView: View {
             Text("Добавить блюдо")
                 .frame(maxWidth: .infinity)
                 .padding()
-                .background(Color.green)
+                .background(Color(uiColor: UIColor(red: CGFloat(65.0/255), green: CGFloat(144.0/255), blue: CGFloat(149.0/255), alpha: 1.0)))
                 .foregroundColor(.white)
                 .font(.title)
                 .cornerRadius(10)
