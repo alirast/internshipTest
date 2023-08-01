@@ -13,6 +13,7 @@ struct DishTitleView: View {
             VStack(alignment: .leading) {
                 Text("Блюдо")
                     .font(.title)
+                    .fontWeight(.bold)
                 TextField("Название", text: $dishTitle)
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color("specialGreen"), style: StrokeStyle(lineWidth: 1.0)))

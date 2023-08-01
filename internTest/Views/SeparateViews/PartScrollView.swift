@@ -12,6 +12,10 @@ struct PartScrollView: View {
     
     var body: some View {
         VStack {
+            Text("Раздел")
+                .font(.title)
+                .fontWeight(.bold)
+            
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(buttons, id: \.self) { button in

@@ -13,6 +13,7 @@ struct PriceView: View {
         VStack(alignment: .leading) {
             Text("Цена")
                 .font(.title)
+                .fontWeight(.bold)
             TextField("Цена", text: $priceTitle)
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 15).strokeBorder(Color("specialGreen"), style: StrokeStyle(lineWidth: 1.0)))

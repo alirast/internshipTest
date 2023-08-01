@@ -9,20 +9,27 @@ import SwiftUI
 
 struct AddIngredientButton: View {
     @State private var newContent: [String] = []
+    
     var body: some View {
-        Button {
-            self.showAlert()
-        } label: {
-            Text("Добавить ингредиент")
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color("specialGreen"))
-                .foregroundColor(.white)
-                .cornerRadius(10)
+        VStack(alignment: .leading) {
+            Text("Cостав")
+                .font(.title)
+                .fontWeight(.bold)
+            Button {
+                self.showAlert()
+            } label: {
+                Text("Добавить ингредиент")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color("specialGreen"))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .padding()
     }
-    func showAlert() {
+    
+    private func showAlert() {
         let alert = UIAlertController(title: "Enter text", message: nil, preferredStyle: .alert)
         alert.addTextField()
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
