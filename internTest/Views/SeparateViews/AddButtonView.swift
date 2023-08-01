@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct AddButtonView: View {
+    @State private var isSecondViewVisible = false
     var body: some View {
         Button {
-            
+            isSecondViewVisible = true
         } label: {
             Text("Добавить блюдо")
                 .frame(maxWidth: .infinity)
@@ -19,6 +20,9 @@ struct AddButtonView: View {
                 .foregroundColor(.white)
                 .font(.title)
                 .cornerRadius(10)
+            NavigationLink(destination: SecondView(), isActive: $isSecondViewVisible) {
+                EmptyView()
+            }
         }
         .padding(.horizontal)
     }

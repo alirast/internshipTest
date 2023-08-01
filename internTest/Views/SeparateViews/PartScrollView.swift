@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PartScrollView: View {
     @State var buttons: [String] = ["New part"]
+    @State private var isSecondViewVisible = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -69,13 +70,16 @@ struct PartScrollView: View {
            
                 Spacer()
                 Button {
-                    
+                    isSecondViewVisible = true
                 } label: {
                     Text("Посмотреть раздел")
                         .foregroundColor(.gray)
                         .overlay(Rectangle()
                             .fill(Color.gray)
                             .frame(width: 155, height: 1), alignment: .bottom)
+                    NavigationLink(destination: SecondView(), isActive: $isSecondViewVisible) {
+                        EmptyView()
+                    }
                 }
             
             }
