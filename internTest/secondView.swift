@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PartView: View {
+struct SecondView: View {
     var body: some View {
         HStack {
             Image(systemName: "person")
@@ -15,8 +15,8 @@ struct PartView: View {
                 Text("Vitamin")
                 Text("Content: coco, cabbage")
                 HStack {
-                    Image(systemName: "pencil")
-                    Image(systemName: "cross")
+                    Image(systemName: "pencil.circle")
+                    Image(systemName: "xmark.circle")
                 }
             }
             Text("850")
@@ -24,8 +24,8 @@ struct PartView: View {
     }
 }
 
-struct PartView_Previews: PreviewProvider {
+struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
-        PartView()
+        SecondView()
     }
 }
